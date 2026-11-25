@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The Copper Kettle v3 — a realistic kitchen rush. Flip the patty, shake the fries, serve real customers before they lose patience.">
+<title>The Copper Kettle v3 — a realistic kitchen rush</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #17100b; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: Georgia, 'Times New Roman', serif; }
+  #wrap { width: 1280px; height: 720px; position: relative; box-shadow: 0 0 60px rgba(0,0,0,.8); }
+  canvas { display: block; width: 1280px; height: 720px; cursor: pointer; }
+  #hint { position: absolute; left: 0; right: 0; bottom: -26px; text-align: center; color: #b9a68f; font-size: 13px; letter-spacing: .04em; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="hint">Click a station to cook &middot; F flips the patty &middot; S serves (or shakes the fries) &middot; C clears the plate &middot; Space starts &middot; M mutes</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+<noscript><p style="color:#fff">The Copper Kettle needs JavaScript to cook.</p></noscript>
+</body>
+</html>
